@@ -1,0 +1,700 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+/* font-family: 'Montserrat', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* BODY */
+
+body {
+  background-color: white;
+}
+
+:root {
+  --main-color: #fd6f00;
+}
+
+.app {
+}
+
+.section {
+  margin: 60px 200px;
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 200px;
+}
+
+.header__logo {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__logo h1 {
+  font-size: 48px;
+  color: var(--main-color);
+}
+
+.header__logo span {
+  font-size: 24px;
+  font-weight: 300;
+  color: #545454;
+}
+
+.header__logo strong {
+  color: #1e1e1e;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.header__links {
+}
+
+.header__links__list {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+}
+
+.header__links__list li {
+}
+
+.header__links__list a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 3%;
+  color: black;
+  padding: 15px;
+  border-radius: 80px;
+}
+
+.header__links__list a:hover {
+  background-color: rgba(253, 105, 0, 0.2);
+  transition: background-color 0.5s ease-in-out;
+}
+
+.header__button {
+  padding: 18px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 3%;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--main-color);
+  cursor: pointer;
+}
+
+.menu__burger {
+  cursor: pointer;
+  display: none;
+}
+
+/* SECTION 1 */
+.section__1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.welcome__text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome__text h3 {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 3%;
+}
+
+.welcome__text h2 {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 3%;
+  color: var(--main-color);
+}
+
+.welcome__profession {
+  margin-bottom: 28px;
+}
+
+.welcome__profession h1 {
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 3%;
+}
+
+.welcome__profession h1:nth-child(2) {
+  float: right;
+}
+
+.welcome__text p {
+  font-size: 21px;
+  font-weight: 400;
+  letter-spacing: 3%;
+  margin-bottom: 22px;
+}
+
+.welcome__contact-button {
+  padding: 18px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 3%;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--main-color);
+  cursor: pointer;
+}
+
+.welcome__photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+.welcome__photo img {
+  width: 375px;
+  height: 468px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* SECTION 2 */
+.section__2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.about__photo {
+  flex: 1;
+}
+
+.about__photo img {
+  width: 100%;
+  border-radius: 100px;
+}
+
+.about__text {
+  flex: 2;
+}
+
+.about__text h1 {
+  font-size: 65px;
+  font-weight: 600;
+  letter-spacing: 3%;
+  margin-bottom: 15px;
+}
+
+.about__text p {
+  font-size: 21px;
+  font-weight: 400;
+  letter-spacing: 3%;
+  margin-bottom: 15px;
+}
+
+.skills {
+}
+
+.skills ul {
+  list-style: none;
+}
+
+.skills input {
+  width: 100%;
+}
+
+/* SECTION 3 */
+.section__3 {
+}
+
+.technologies__description {
+  text-align: center;
+}
+
+.technologies__description h1 {
+  font-size: 65px;
+  font-weight: 600;
+  letter-spacing: 3%;
+}
+
+.technologies__description p {
+  font-size: 21px;
+  font-weight: 400;
+  letter-spacing: 3%;
+  margin-bottom: 24px;
+}
+
+.skills__block {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.skill__square {
+  background-color: #f8f8f8;
+  border-radius: 14px;
+  padding: 15px;
+}
+
+.skill__part {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.skill__part span {
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.skill__list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-item span {
+  font-size: 14px;
+}
+
+/* SECTION 4 */
+.section__4 {
+}
+
+.projects__description {
+  text-align: center;
+}
+
+.projects__description h1 {
+  font-size: 65px;
+  font-weight: 600;
+  letter-spacing: 3%;
+}
+
+.projects__description p {
+  font-size: 21px;
+  font-weight: 400;
+  letter-spacing: 3%;
+  margin-bottom: 24px;
+}
+
+.projects__block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project__square {
+  width: 300px;
+  text-align: center;
+}
+
+.project__square img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.project__square a {
+  text-decoration: none;
+  color: black;
+}
+
+.project__square h2 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 3%;
+}
+
+/*model*/
+.model {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  transition: opacity 0.4s ease, visibility 0.4s ease,
+    transform 0.5s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+  overflow: hidden;
+  z-index: 999;
+}
+
+.model.open {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.model img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  display: block;
+  line-height: 0;
+  box-sizing: border-box;
+  padding: 20px 0 20px;
+  margin: 0 auto;
+}
+
+.icon__close {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* SECTION 5 */
+.section__5 {
+}
+
+.section__5 h1 {
+  text-align: center;
+  font-size: 65px;
+  font-weight: 600;
+  letter-spacing: 3%;
+}
+
+.education__block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+.education__photo {
+  width: 100%;
+}
+
+.education__text h2 {
+  font-size: 48px;
+  font-weight: 500;
+  letter-spacing: 3%;
+}
+
+.education__text h3 {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 3%;
+}
+
+.education__text h4 {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 3%;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #f8f8f8;
+}
+
+.footer__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 25px;
+  margin-bottom: 25px;
+}
+
+.footer__logo h1 {
+  font-size: 48px;
+  color: var(--main-color);
+}
+
+.footer__logo span {
+  font-size: 24px;
+  font-weight: 300;
+  color: #545454;
+}
+
+.footer__logo strong {
+  color: #1e1e1e;
+}
+
+.footer__links {
+}
+
+.footer__links__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer__links__list li {
+  padding: 14px 10px;
+}
+
+.footer__links__list a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer__socials {
+  margin: 25px 0;
+}
+
+.footer__socials__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.footer__lowest {
+  background-color: #545454;
+  color: white;
+  text-align: center;
+}
+
+.footer__lowest p {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.footer__lowest span {
+  color: var(--main-color);
+  font-weight: 700;
+}
+
+.to__top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1285px) {
+  .section {
+    margin: 60px 100px;
+  }
+
+  .header {
+    width: 90%;
+    margin: 50px 5%;
+  }
+
+  .welcome__profession h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 3%;
+  }
+
+  .welcome__text p {
+    font-size: 16px;
+  }
+
+  .welcome__profession h1:nth-child(2) {
+    float: right;
+    margin-right: 20px;
+  }
+
+  .welcome__photo img {
+    width: 275px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .about__text h1 {
+    font-size: 45px;
+  }
+
+  .about__text p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .header__content {
+    display: none;
+  }
+
+  .header__content.open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    width: 89%;
+    top: 130px;
+    background-color: #1e1e1e;
+  }
+
+  .header__links__list {
+    gap: 15px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .header__links__list a {
+    color: white;
+    padding: 5px 10px;
+  }
+
+  .menu__burger {
+    display: block;
+  }
+
+  .section {
+    width: 90%;
+    margin: 50px 5%;
+  }
+
+  /* SECTION 1 */
+  .section__1 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .welcome__photo,
+  .welcome__text {
+    width: 100%;
+  }
+
+  .welcome__text {
+    all: initial;
+    text-align: center;
+  }
+
+  .welcome__profession h1:nth-child(2) {
+    float: initial;
+    margin-right: 0;
+  }
+
+  /* SECTION 2 */
+  .section__2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about__photo {
+    width: 75%;
+  }
+
+  .about__text {
+    text-align: center;
+  }
+
+  /* SECTION 3 */
+  .section__3 {
+  }
+
+  .technologies__description h1 {
+    font-size: 45px;
+  }
+
+  .technologies__description p {
+    font-size: 16px;
+  }
+
+  .skills__block {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .skill__part img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .skill__part span {
+    font-size: 18px;
+  }
+
+  /* SECTION 4 */
+  .section__4 {
+  }
+
+  .projects__description h1 {
+    font-size: 45px;
+  }
+
+  .projects__description p {
+    font-size: 18px;
+  }
+
+  .projects__block {
+    justify-content: center;
+  }
+
+  /* SECTION 5 */
+  .section__5 {
+  }
+
+  .section__5 h1 {
+    font-size: 45px;
+  }
+
+  .education__block {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .education__photo {
+    width: 100%;
+  }
+
+  .education__photo img {
+    width: 100%;
+    border-radius: 50px;
+  }
+
+  .education__text {
+    text-align: center;
+  }
+}
