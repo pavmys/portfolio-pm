@@ -3,7 +3,7 @@ const { useState } = React;
 function App() {
   // for downloading CV
   const buttonDownloadCVClick = () => {
-    const pdfUrl = "./cv.pdf";
+    const pdfUrl = "./CV.pdf";
     const link = document.createElement("a");
     link.href = pdfUrl;
     link.download = "CV_Pavlo_Myskiv.pdf"; // specify the filename
