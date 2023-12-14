@@ -337,23 +337,17 @@ function App() {
             />
           </div>
           <div className="education__text">
-            <h2>BACHELOR</h2>
-            <h3>Ivan Franko National University of Lviv</h3>
-            <h4>Computer Science</h4>
-            <p>2019 - 2023</p>
-          </div>
-
-          <div className="education__photo">
-            <img
-              src="https://static.espreso.tv/uploads/article/2562283/images/im-LNU.jpg"
-              alt=""
-            />
-          </div>
-          <div className="education__text">
             <h2>MASTER'S DEGREE</h2>
             <h3>Ivan Franko National University of Lviv</h3>
             <h4>Computer Science</h4>
             <p>2023 - present</p>
+            <br />
+            <br />
+            <br />
+            <h2>BACHELOR'S DEGREE</h2>
+            <h3>Ivan Franko National University of Lviv</h3>
+            <h4>Computer Science</h4>
+            <p>2019 - 2023</p>
           </div>
         </article>
       </section>
