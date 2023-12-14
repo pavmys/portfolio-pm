@@ -89,14 +89,22 @@ function App() {
         <img
           width="50"
           height="50"
-          src="https://img.icons8.com/ios/50/000000/menu--v7.png"
+          src={
+            headerOpen
+              ? "https://img.icons8.com/ios/50/delete-sign--v1.png"
+              : "https://img.icons8.com/ios/50/000000/menu--v7.png"
+          }
           alt="menu--v7"
           className="menu__burger"
           onClick={openHeaderClick}
         />
       </header>
 
-      <section className="section section__1" id="welcome">
+      <section
+        className="section section__1"
+        id="welcome"
+        onClick={() => setHeaderOpen(false)}
+      >
         <article className="welcome__text">
           <h3>Hi I'm</h3>
           <h2>Pavlo Myskiv</h2>
@@ -118,7 +126,10 @@ function App() {
         </article>
       </section>
 
-      <section className="section section__2">
+      <section
+        className="section section__2"
+        onClick={() => setHeaderOpen(false)}
+      >
         <article className="about__photo">
           <img src="./img/my-pic-2.jpg" alt="My_photo_2" />
         </article>
@@ -133,15 +144,15 @@ function App() {
           <div className="skills">
             <ul>
               <li>
-                <h2>Frontend skills</h2>
+                <h2>Frontend 👨‍💻</h2>
                 <input type="range" min="0" max="100" value="70" readOnly />
               </li>
               <li>
-                <h2>Backend skills</h2>
+                <h2>Backend 💻</h2>
                 <input type="range" min="0" max="100" value="60" readOnly />
               </li>
               <li>
-                <h2>UI/UX design skills</h2>
+                <h2>UI/UX Design 🖌️</h2>
                 <input type="range" min="0" max="100" value="40" readOnly />
               </li>
             </ul>
@@ -149,7 +160,11 @@ function App() {
         </article>
       </section>
 
-      <section className="section section__3" id="skills">
+      <section
+        className="section section__3"
+        id="skills"
+        onClick={() => setHeaderOpen(false)}
+      >
         <article className="technologies__description">
           <h1>Skills</h1>
           <p>Here are technologies, which I work with</p>
@@ -274,12 +289,15 @@ function App() {
         </article>
       </section>
 
-      {/* TODO: functionality of clicking on photo - become full screen */}
-      <section className="section section__4" id="projects">
+      <section
+        className="section section__4"
+        id="projects"
+        onClick={() => setHeaderOpen(false)}
+      >
         <article className="projects__description">
           <h1>My Projects</h1>
           <p>Here are all projects made by me</p>
-          <p>You can click on images to look on details)</p>
+          <p>Click on image to look on details)</p>
         </article>
 
         <div className={model ? "model open" : "model"}>
@@ -327,7 +345,11 @@ function App() {
         </article>
       </section>
 
-      <section className="section section__5" id="education">
+      <section
+        className="section section__5"
+        id="education"
+        onClick={() => setHeaderOpen(false)}
+      >
         <h1>Education</h1>
         <article className="education__block">
           <div className="education__photo">
@@ -336,6 +358,7 @@ function App() {
               alt=""
             />
           </div>
+          
           <div className="education__text">
             <h2>MASTER'S DEGREE</h2>
             <h3>Ivan Franko National University of Lviv</h3>
@@ -352,7 +375,11 @@ function App() {
         </article>
       </section>
 
-      <footer className="footer" id="contact">
+      <footer
+        className="footer"
+        id="contact"
+        onClick={() => setHeaderOpen(false)}
+      >
         <div className="footer__logo">
           <h1>PM</h1>
           <span>
