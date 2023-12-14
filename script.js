@@ -336,7 +336,7 @@ function App() {
             <img src="./img/banking-pic-3.png" alt="" onClick={getImgSrc} />
             <img src="./img/banking-pic-4.png" alt="" onClick={getImgSrc} />
             <a
-              href="https://storied-sopapillas-551924.netlify.app/home"
+              href="https://pavmys.github.io/banking-site/home.html"
               target="_blank"
             >
               <h2>YourBanK</h2>
@@ -358,7 +358,7 @@ function App() {
               alt=""
             />
           </div>
-          
+
           <div className="education__text">
             <h2>MASTER'S DEGREE</h2>
             <h3>Ivan Franko National University of Lviv</h3>
